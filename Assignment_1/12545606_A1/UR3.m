@@ -5,7 +5,7 @@ classdef UR3 < handle
         
         %> workspace
         workspace = [-5 5 -4 4 -0.78 2];
-               
+        
         %> If we have a tool model which will replace the final links model, combined ply file of the tool model and the final link models
         toolModelFilename = []; % Available are: 'DabPrintNozzleTool.ply';        
         toolParametersFilename = []; % Available are: 'DabPrintNozzleToolParameters.mat';        
@@ -52,7 +52,7 @@ classdef UR3 < handle
 
         %% PlotAndColourRobot
         % Given a robot index, add the glyphs (vertices and faces) and
-        % colour them in if data is available 
+        % colour them in if data is available
         function PlotAndColourRobot(self)%robot,workspace)
             for linkIndex = 0:self.model.n
                 [ faceData, vertexData, plyData{linkIndex + 1} ] = plyread(['models/r3/L',num2str(linkIndex),'.ply'],'tri'); %#ok<AGROW>
