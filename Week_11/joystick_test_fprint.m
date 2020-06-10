@@ -17,7 +17,7 @@ pause(2);
 
 %%
 while(1)
-    
+
     % Read joystick buttons
     [axes, buttons, povs] = read(joy);
 
@@ -36,5 +36,5 @@ while(1)
 end
     
     
-    
+      
     

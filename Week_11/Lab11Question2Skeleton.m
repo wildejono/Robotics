@@ -40,6 +40,14 @@ while( toc < duration)
     % 3 - apply joint velocity to step robot joint angles 
     % -------------------------------------------------------------
     
+    if axes(1) > 0
+        disp('greater')
+    elseif axes(1) < 0
+        disp('less')
+    else
+        % Do nothing    
+    end    
+    
     % Update plot
     robot.animate(q);  
     
