@@ -4,8 +4,8 @@ classdef UR10 < handle
         model;
         
         %> workspace
-        workspace = [-2 2 -2 2 -0.3 2];   
-               
+        workspace = [-2 2 -2 2 -0.3 2];
+
         %> If we have a tool model which will replace the final links model, combined ply file of the tool model and the final link models
         toolModelFilename = []; % Available are: 'DabPrintNozzleTool.ply';        
         toolParametersFilename = []; % Available are: 'DabPrintNozzleToolParameters.mat';        
